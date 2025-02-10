@@ -1,0 +1,23 @@
+.admin {
+    .btn {
+        margin-right: 10px;
+
+        .fa-solid {
+            margin-right: 10px;
+        }
+    }
+}
+
+.dark-mode {
+    .admin {
+
+        .btn-dark {
+            background-color: #7474a1;
+            border: none;
+
+            &:hover {
+                background-color: #65658d;
+            }
+        }
+    }
+}
