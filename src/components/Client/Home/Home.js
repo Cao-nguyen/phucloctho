@@ -7,11 +7,6 @@ function Home(props) {
       <HelmetProvider>
         <Helmet>
           <title>Phúc Lộc Thọ | Trang chủ</title>
-          <meta
-            name="description"
-            content="Nền tảng học công nghệ thông tin onlineonline"
-          />
-          <link rel="canonical" href="https://cncode.vercel.app" />
         </Helmet>
       </HelmetProvider>
 

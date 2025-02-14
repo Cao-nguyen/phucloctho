@@ -14,13 +14,6 @@ import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import lixi from "./assets/Tet/lixi.png";
-import hoamai from "./assets/Tet/hoamai.png";
-import maivang from "./assets/Tet/maivang.png";
-import nguoituyet from "./assets/Noel/nguoituyet.png";
-import banhtrungthu from "./assets/Trungthu/banhtrungthu.png";
-import thongoc from "./assets/Trungthu/thongoc.png";
-import trang from "./assets/Trungthu/trang.png";
 import "./App.scss";
 import { useQuery } from "@tanstack/react-query";
 import { getInforApi } from "./services/adminServer";
@@ -61,20 +54,6 @@ function App() {
   const toggleOpen = () => {
     setOpen(!open);
   };
-
-  const tetImages = [
-    { src: lixi, alt: "Lì xì", className: "tet1" },
-    { src: hoamai, alt: "Hoa mai", className: "tet2" },
-    { src: maivang, alt: "Mai vàng", className: "tet3" },
-  ];
-
-  const NoelImages = [{ src: nguoituyet, alt: "", className: "noel1" }];
-
-  const TrungthuImages = [
-    { src: banhtrungthu, alt: "", className: "trungthu1" },
-    { src: thongoc, alt: "", className: "trungthu2" },
-    { src: trang, alt: "", className: "trungthu3" },
-  ];
 
   const useApi = (queryKey, queryFn) => useQuery({ queryKey, queryFn });
   useApi(["Infor"], getInforApi);
@@ -118,39 +97,6 @@ function App() {
               toggleTheme={toggleTheme}
             />
           )}
-
-          <div className="tet" style={{ display: "none" }}>
-            {tetImages.map((img, index) => (
-              <img
-                key={index}
-                className={img.className}
-                src={img.src}
-                alt={img.alt}
-              />
-            ))}
-          </div>
-
-          <div className="noel" style={{ display: "none" }}>
-            {NoelImages.map((img, index) => (
-              <img
-                key={index}
-                className={img.className}
-                src={img.src}
-                alt={img.alt}
-              />
-            ))}
-          </div>
-
-          <div className="trungthu" style={{ display: "none" }}>
-            {TrungthuImages.map((img, index) => (
-              <img
-                key={index}
-                className={img.className}
-                src={img.src}
-                alt={img.alt}
-              />
-            ))}
-          </div>
 
           {login && (
             <div className="bg-fixed">
