@@ -87,7 +87,7 @@ function Header({ toggleLogin, isDarkMode, toggleTheme }) {
                 <Dropdown.Menu>
                   {role === "admin" && (
                     <Dropdown.Item>
-                      <NavLink className="dropdown-link" to="/admin/dashboard">
+                      <NavLink className="dropdown-link" to="/admin/infor">
                         Trang quản trị
                       </NavLink>
                     </Dropdown.Item>

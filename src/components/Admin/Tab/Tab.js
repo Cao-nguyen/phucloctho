@@ -6,14 +6,14 @@ const Tab = () => {
   return (
     <div className="tab">
       <div className="tab-items">
-        <div className="tab-links">CNcode</div>
+        <div className="tab-links">PHÚC LỘC THỌ</div>
       </div>
 
-      <NavLink className="tab-item" to="/admin/dashboard">
+      <NavLink className="tab-item" to="/admin/infor">
         <div className="tab-icon">
           <i className="fa-solid fa-house"></i>
         </div>
-        <div className="tab-link">Tổng quan</div>
+        <div className="tab-link">Giới thiệu</div>
       </NavLink>
 
       <NavLink className="tab-item" to="/admin/course">
