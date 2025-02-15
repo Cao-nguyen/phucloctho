@@ -17,7 +17,6 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.scss";
 import { useQuery } from "@tanstack/react-query";
 import { getInforApi } from "./services/adminServer";
-import { ShowNewClient } from "./services/clientServer";
 
 function App() {
   const location = useLocation();
@@ -57,7 +56,6 @@ function App() {
 
   const useApi = (queryKey, queryFn) => useQuery({ queryKey, queryFn });
   useApi(["Infor"], getInforApi);
-  useApi(["news"], ShowNewClient);
 
   return (
     <div className={isDarkMode ? "dark-mode" : ""}>
