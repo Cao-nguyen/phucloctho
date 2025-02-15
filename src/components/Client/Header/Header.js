@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Dropdown from "react-bootstrap/Dropdown";
 import HandleLogout from "../../../middlewares/LogoutMiddleware";
+import logo from "../../../assets/logo.png";
 import "./Header.scss";
 
 function Header({ toggleLogin, isDarkMode, toggleTheme }) {
@@ -18,7 +19,7 @@ function Header({ toggleLogin, isDarkMode, toggleTheme }) {
       <div className="laptop">
         <Nav className="nav" variant="pills">
           <div className="nav-logo">
-            <h3 className="mx-5">BĂNG KEO PHÚC LỘC THỌ</h3>
+            <img className="logo" src={logo} alt="" />
           </div>
           <div className="d-flex nav-item">
             <Nav.Item className="nav-links">
