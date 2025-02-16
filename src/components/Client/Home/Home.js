@@ -5,7 +5,9 @@ function Home(props) {
     <>
       <div className="container">
         <h1 className="text-center mt-5 text-primary">
-          Phúc Lộc Thọ - CTY TNHH MTV TMDV
+          <marquee>
+            Chào mừng quý khách hàng đã đến với website của Phúc Lộc Thọ
+          </marquee>
         </h1>
       </div>
     </>

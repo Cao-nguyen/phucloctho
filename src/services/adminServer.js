@@ -1,5 +1,36 @@
 import axios from "axios";
 
+// [DELETE] Bài viết
+export const blogDelete = async (id) => {
+  const response = await axios.post(
+    `${process.env.REACT_APP_BACKEND}/api/v1/blog/delete`,
+    {
+      id,
+    }
+  );
+  return response.data;
+};
+
+// [GET] Bài viết
+export const blogGet = async () => {
+  const response = await axios.get(
+    `${process.env.REACT_APP_BACKEND}/api/v1/blog/get`
+  );
+  return response.data;
+};
+
+// [POST] Bài viết
+export const blogPost = async (name, content) => {
+  const response = await axios.post(
+    `${process.env.REACT_APP_BACKEND}/api/v1/blog/post`,
+    {
+      name,
+      content,
+    }
+  );
+  return response.data;
+};
+
 // [PATCH] Delete
 export const DeleteBinsNews = async (id) => {
   const response = await axios.post(

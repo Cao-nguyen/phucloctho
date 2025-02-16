@@ -1,6 +1,13 @@
 import axios from "axios";
 
 // API quên mật khẩu
+export const blogGet = async () => {
+  const response = await axios.get(
+    `${process.env.REACT_APP_BACKEND}/api/v1/blogGet`
+  );
+  return response.data;
+};
+
 export const productGet = async () => {
   const response = await axios.get(
     `${process.env.REACT_APP_BACKEND}/api/v1/productGet`

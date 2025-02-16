@@ -28,3 +28,36 @@
     }
   }
 }
+
+@media screen and (max-width: 1190px) {
+  .products {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    .products-item {
+      background-color: #eee;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+      }
+
+      h3 {
+        margin: 0px 20px;
+      }
+
+      p.price {
+        margin: 0px 20px;
+        font-size: 18px;
+        color: red;
+      }
+
+      p {
+        margin: 0px 20px 20px 20px;
+        font-size: 15px;
+      }
+    }
+  }
+}
