@@ -24,7 +24,6 @@
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-markdown": "^9.0.3",
-    "react-mde": "^11.5.0",
     "react-quill": "^2.0.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^6.15.0",
@@ -39,11 +38,11 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
+    "install": "npm install --legacy-peer-deps",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "preinstall": "npx npm-force-resolutions"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
