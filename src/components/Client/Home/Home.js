@@ -5,34 +5,8 @@ function Home(props) {
     <>
       <div className="container">
         <h1 className="text-center mt-5 text-primary">
-          CNcode - Nền tảng học lập trình miễn phí
+          Phúc Lộc Thọ - CTY TNHH MTV TMDV
         </h1>
-        <h3 className="text-center">Dự án được phát triển bởi Lý Cao Nguyên</h3>
-
-        <h1 className="text-center mt-5 text-primary">
-          CNcode - Nền tảng học lập trình miễn phí
-        </h1>
-        <h3 className="text-center">Dự án được phát triển bởi Lý Cao Nguyên</h3>
-
-        <h1 className="text-center mt-5 text-primary">
-          CNcode - Nền tảng học lập trình miễn phí
-        </h1>
-        <h3 className="text-center">Dự án được phát triển bởi Lý Cao Nguyên</h3>
-
-        <h1 className="text-center mt-5 text-primary">
-          CNcode - Nền tảng học lập trình miễn phí
-        </h1>
-        <h3 className="text-center">Dự án được phát triển bởi Lý Cao Nguyên</h3>
-
-        <h1 className="text-center mt-5 text-primary">
-          CNcode - Nền tảng học lập trình miễn phí
-        </h1>
-        <h3 className="text-center">Dự án được phát triển bởi Lý Cao Nguyên</h3>
-
-        <h1 className="text-center mt-5 text-primary">
-          CNcode - Nền tảng học lập trình miễn phí
-        </h1>
-        <h3 className="text-center">Dự án được phát triển bởi Lý Cao Nguyên</h3>
       </div>
     </>
   );
