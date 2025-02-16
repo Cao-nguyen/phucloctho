@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import Settings from "../components/Admin/Settings/Settings";
 import Infor from "../components/Admin/Infor/Infor";
 import Bins from "../components/Admin/Bins/Bins";
+import Products from "../components/Admin/Products/Products";
+import Create from "../components/Admin/Products/Create";
 
 export const adminRoutesValidate = ["/admin/*"];
 
@@ -29,6 +31,22 @@ const ProtectedRoute = ({ children }) => {
 const AdminRoutes = (props) => {
   return (
     <Routes>
+      <Route
+        path="/admin/course/create"
+        element={
+          <ProtectedRoute>
+            <Create />
+          </ProtectedRoute>
+        }
+      ></Route>
+      <Route
+        path="/admin/course"
+        element={
+          <ProtectedRoute>
+            <Products />
+          </ProtectedRoute>
+        }
+      ></Route>
       <Route
         path="/admin/infor"
         element={
