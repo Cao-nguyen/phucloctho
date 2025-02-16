@@ -48,12 +48,12 @@ function Bins(props) {
 
   return (
     <div className="admin">
-      {news.length > 0 && <h2>Tin tức đã bị xoá</h2>}
+      {news.length > 0 && <h2>Sản phẩm đã bị xoá</h2>}
       {news.map((item) => (
         <div className="bins_news" key={item._id}>
-          <p>{moment(item.updatedAt).format("DD/MM/YYYY - HH:mm:ss")}</p>
+          <p>{moment(item.deletedAt).format("DD/MM/YYYY - HH:mm:ss")}</p>
           <div className="bins_news_item">
-            <h4>{item.title}</h4>
+            <h4>{item.name}</h4>
             <div
               className="btn btn-primary"
               onClick={() => handlePatch(item._id)}

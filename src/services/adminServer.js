@@ -26,6 +26,39 @@ export const BinsNews = async () => {
   return response.data;
 };
 
+// [POST] Sản phẩm
+export const productPost = async (name, price, img, content) => {
+  const response = await axios.post(
+    `${process.env.REACT_APP_BACKEND}/api/v1/products/post`,
+    {
+      name,
+      price,
+      img,
+      content,
+    }
+  );
+  return response.data;
+};
+
+// [GET] Sản phẩm
+export const productGet = async () => {
+  const response = await axios.get(
+    `${process.env.REACT_APP_BACKEND}/api/v1/products/get`
+  );
+  return response.data;
+};
+
+// [GET] Sản phẩm
+export const productDelete = async (id) => {
+  const response = await axios.patch(
+    `${process.env.REACT_APP_BACKEND}/api/v1/products/delete`,
+    {
+      id,
+    }
+  );
+  return response.data;
+};
+
 // [PACTH] Footer
 export const footerInfor = async (name, content) => {
   const response = await axios.patch(
