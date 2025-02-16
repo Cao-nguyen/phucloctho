@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { Form, Button, Card, Spinner } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { productPost } from "../../../services/adminServer";
-import Editor from "../../Service/Editor";
 
 const Create = () => {
   const navigate = useNavigate();
@@ -115,7 +114,12 @@ const Create = () => {
 
             <div className="form-group mt-3 col-lg-12">
               <label className="form-label fw-bold fs-5">Mô tả sản phẩm*</label>
-              <Editor value={content} onChange={setContent} />
+              <textarea
+                className="form-control"
+                style={{ height: "200px" }}
+                value={content}
+                onChange={setContent}
+              />
             </div>
           </div>
           <div className="mt-3 text-center">

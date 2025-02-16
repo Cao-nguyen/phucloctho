@@ -1,6 +1,14 @@
 import axios from "axios";
 
 // API quên mật khẩu
+export const productGet = async () => {
+  const response = await axios.get(
+    `${process.env.REACT_APP_BACKEND}/api/v1/productGet`
+  );
+  return response.data;
+};
+
+// API quên mật khẩu
 export const forgotCheck = async (email, password) => {
   const response = await axios.patch(
     `${process.env.REACT_APP_BACKEND}/api/v1/forgot`,
